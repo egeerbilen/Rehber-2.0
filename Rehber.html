@@ -1,0 +1,98 @@
+<html>
+
+<head lang="tr" backgro>
+    <title>Rehber</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="Css/style.css" type="text/css" rel="stylesheet" />
+    <script src="Js/Giris.js"></script>
+</head>
+
+<body class="giris" ng-app="">
+    <div class="col-sm-12 upper ">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light ust_brk" data-toggle="modal" data-target="#exampleModal">
+            <b>+ Yeni kişi ekle</b>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel"><strong>Yeni kişi ekle</strong> </h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-2"><strong>Ad: </strong></div>
+                            <div class="col-sm-1"><input type="text" id="name" placeholder="Ad"><br><br></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"><strong>Soyad:</strong></div>
+                            <div class="col-sm-1"><input type="text" id="surname" placeholder="Soyad"><br><br></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"><strong>E-posta:</strong></div>
+                            <div class="col-sm-1"><input type="email" id="posta" placeholder="E-posta"><br><br></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"><strong>Facebook:</strong></div>
+                            <div class="col-sm-1"><input type="text" id="face" placeholder="Facebook"><br><br></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"><strong>İnstagram:</strong></div>
+                            <div class="col-sm-1"><input type="text" id="insta" placeholder="İnstagram"><br><br></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"><strong>Linkedin:</strong></div>
+                            <div class="col-sm-1"><input type="text" id="linked" placeholder="Linkedin"><br><br></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"><strong>Twitter:</strong></div>
+                            <div class="col-sm-1"><input type="text" id="twit" placeholder="Twitter"><br><br></div>
+                        </div>
+                        <div class="row">0553 737 8354
+                            <div class="col-sm-2"><strong>Tel No:</strong></div>
+                            <div class="col-sm-1"><input type="text" id="wp" placeholder="(555)______"><br><br></div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <div></div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">İptal et</button>
+                        <button type="button" class="btn btn-success" onclick="Yaz()">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-sm-12">
+        <div class="">
+            <br>
+            <p class="white_article " id="write">
+                </p3>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

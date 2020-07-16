@@ -1,0 +1,104 @@
+<html>
+
+<head lang="tr" backgro>
+    <title>Kaydol</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+    <link href="Css/style.css" type="text/css" rel="stylesheet" />
+    <script src="Js/Giris.js"></script>
+</head>
+
+<body class="giris" ng-app="">
+
+    <div class="jumbotron text-center">
+        <h1 class="head">Kaydol</h1>
+        <h5>web sitemize hoşgeldiniz</h5>
+    </div>
+
+    <div class="container">
+        <form action="/">
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="form-group col-sm-6">
+                    <label class="white_article">Ad:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ad" ng-model="name"
+                        pattern="[a-zA-Z-]+" required>
+                    <p class="white_article" id="art_mail"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="form-group col-sm-6">
+                    <label class="white_article">Soyad:</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Soyad" ng-model="surname"
+                        pattern="[a-zA-Z-]+" required>
+                    <p class="white_article" id="art_mail"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="form-group col-sm-6">
+                    <label for="email" class="white_article">E-posta:</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-posta" ng-model="email">
+                    <p class="white_article" id="art_mail"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="form-group col-sm-6">
+                    <label for="email" class="white_article">E-posta tekrar:</label>
+                    <input type="email" class="form-control" id="email1" placeholder="E-posta tekrar" ng-model="email1">
+                    <p class="white_article" id="art_mail"></p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="form-group col-sm-6">
+                    <label for="pwd" class="white_article">Şifre:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Şifre" ng-model="pwd">
+                    <p class="white_article" id="art_pw"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="form-group col-sm-6">
+                    <label for="pwd" class="white_article">Şifre tekrar:</label>
+                    <input type="password" class="form-control" id="pwd1" placeholder="Şifre tekrar" ng-model="pwd1">
+                    <p class="white_article" id="art_pw"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <label class="white_article"><input type="checkbox" name="remember" id="check"
+                            ng-model="check">Robot değilim</label>
+                    <p class="white_article" id="art_chck"></p>
+
+                    <button type="submit" class="btn btn-default btn_white_article" onclick="control()"
+                        ng-disabled="!check || !pwd || !pwd1 || !email || !email1 || !name || !surname || pwd != pwd1 || email != email1">Submit</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+
+</html>

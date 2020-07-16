@@ -1,0 +1,20 @@
+.white_article{
+    color: aliceblue;
+}
+.btn_white_article{
+    background-color: aliceblue;
+}
+.upper{
+    background-color: rgb(85, 158, 221);
+    height: 60px;
+}
+.ust_brk{  
+    margin: 10px 0px 0px 1295;
+    font-size: 20px;
+}
+body{
+    background-color: black;
+}
+.head{
+    font-size: 90px;
+}
